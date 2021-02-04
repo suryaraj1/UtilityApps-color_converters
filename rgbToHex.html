@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Utility-apps1</title>
+</head>
+
+<body>
+    <header>
+        <h2>Utility Apps <i class="fas fa-wrench"></i></h2>
+        <nav>
+            <ul class="nav__links">
+                <li><a class="link" href="#">color-code converters <i class="fas fa-sort-down"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li><a href="./rgbToHex.html">RGB to HEX converter</a></li>
+                            <li><a href="#">HEX to RGB converter</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main section -->
+    <div class="container">
+        <div class="title-wrapper">
+            <h1 class="title">RGB to HEX converter</h1>
+        </div>
+
+        <div class="component1">
+            <div class="wrapper">
+                <div class="component">
+                    <div class="color red">R</div>
+                    <input type="range" class="slider red_slider" min="0" max="255" value="0">
+                    <div class="value redVal">0</div>
+                </div>
+
+                <div class="component">
+                    <div class="color green">G</div>
+                    <input type="range" class="slider green_slider" min="0" max="255" value="0">
+                    <div class="value greenVal">0</div>
+                </div>
+
+                <div class="component">
+                    <div class="color blue">B</div>
+                    <input type="range" class="slider blue_slider" min="0" max="255" value="0">
+                    <div class="value blueVal">0</div>
+                </div>
+
+                <div class="result">
+                    <textarea class="hex" cols="10" rows="1"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- information regarding encoder -->
+    </div>
+
+    <div class="accordion">
+
+        <div class="sub-information">
+
+            <div class="contentBox">
+
+                <div class="label-1">
+                    <div class="status-circle"></div>What is RGB to HEX conversion ?
+                </div>
+
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur labore magni praesentium
+                        facilis optio distinctio hic. Laboriosam officia labore beatae!.</p>
+                </div>
+            </div>
+
+            <div class="contentBox">
+
+                <div class="label-1">
+                    <div class="status-circle"></div>When and why RGB to HEX conversion is used ?
+                </div>
+
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis laborum earum soluta ex similique
+                        iste distinctio cupiditate, eligendi vitae esse?</p>
+                </div>
+            </div>
+
+            <div class="contentBox">
+
+                <div class="label-1">
+                    <div class="status-circle"></div>Converting a RGB code to HEX code
+                </div>
+
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis laborum earum soluta ex similique
+                        iste distinctio cupiditate, eligendi vitae esse?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
