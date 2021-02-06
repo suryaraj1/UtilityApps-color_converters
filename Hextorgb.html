@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>Utility-apps1</title>
+</head>
+
+<body>
+  <header>
+    <h2>Utility Apps <i class="fas fa-wrench"></i></h2>
+    <nav>
+      <ul class="nav__links">
+        <li><a class="link" href="#">color-code converters <i class="fas fa-sort-down"></i></a>
+          <div class="sub-menu1">
+            <ul>
+              <li><a href="./rgbToHex.html">RGB to HEX converter</a></li>
+              <li><a href="./Hextorgb.html">HEX to RGB converter</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main section -->
+  <div class="container">
+    <div class="title-wrapper">
+      <h1 class="title">HEX to RGB converter</h1>
+    </div>
+
+    <div class="component1">
+      <div class="wrapper">
+        <input class="input" placeholder="enter hex code here">
+
+        <div class="tools">
+          <button class="converter"><i class="fas fa-sync"></i>Convert</button>
+          <button class="reset"><i class="fas fa-times"></i>Reset</button>
+        </div>
+
+        <div class="output">
+          <div class="stamp">
+            <p>Red </p>
+            <div class="color red-stamp">R</div>
+          </div>
+          <textarea class="red output-text" id="" cols="30" rows="2"></textarea>
+
+          <div class="stamp">
+            <p>Green </p>
+            <div class="color green-stamp">G</div>
+          </div>
+          <textarea class="green output-text" id="" cols="30" rows="2"></textarea>
+
+          <div class="stamp">
+            <p>Blue </p>
+            <div class="color blue-stamp">B</div>
+          </div>
+          <textarea class="blue output-text" id="" cols="30" rows="2"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- information regarding converter -->
+
+  <div class="accordion">
+    <div class="sub-information">
+      <div class="contentBox">
+
+        <div class="label-1">
+          <div class="status-circle"></div>What is HEX to RGB conversion ?
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur labore magni praesentium
+            facilis optio distinctio hic. Laboriosam officia labore beatae!.</p>
+        </div>
+      </div>
+
+      <div class="contentBox">
+
+        <div class="label-1">
+          <div class="status-circle"></div>When and why HEX to RGB conversion is used ?
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis laborum earum soluta ex similique
+            iste distinctio cupiditate, eligendi vitae esse?</p>
+        </div>
+      </div>
+
+      <div class="contentBox">
+
+        <div class="label-1">
+          <div class="status-circle"></div>Converting a HEX code to RGB code
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis laborum earum soluta ex similique
+            iste distinctio cupiditate, eligendi vitae esse?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./HextoRgb.js"></script>
+</body>
+
+</html>

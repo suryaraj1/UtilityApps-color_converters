@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #fbfdff;
+  overflow-x: hidden;
+}
+
+.link,
+a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #232729;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  z-index: 1;
+  transition: 0.2s ease;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+header h2 {
+  transition: 0.2s ease;
+}
+
+.nav__links i {
+  vertical-align: top;
+}
+
+header h2 i:hover {
+  transition: 0.2s ease;
+  color: #276ef1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s ease;
+  box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.2);
+}
+
+.title-wrapper {
+  margin-top: 50px;
+}
+
+.sticky + .component1 {
+  padding-top: 60px;
+}
+
+.nav__links {
+  float: right;
+  list-style: none;
+  position: relative;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 1px 20px;
+}
+
+.nav__links .link {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links .link:hover {
+  color: #276ef1;
+  text-decoration: none;
+}
+
+.sub-menu1 {
+  display: none;
+}
+
+.nav__links li .sub-menu1 ul li a {
+  transition: 0.3s ease;
+}
+
+.nav__links li:hover .sub-menu1 {
+  display: block;
+  position: absolute;
+  margin-top: 1px;
+  margin-left: -15px;
+}
+
+.nav__links li:hover .sub-menu1 ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 8%);
+}
+
+.nav__links li:hover .sub-menu1 ul li {
+  width: 280px;
+  padding: 10px;
+  z-index: 1;
+  border-bottom: 1px solid #e8e8e8;
+  background: #f6f8fa;
+  text-align: left;
+}
+
+.nav__links li:hover .sub-menu1 ul li a {
+  color: #555;
+  font-weight: 400;
+}
+
+.nav__links li:hover .sub-menu1 ul li:last-child {
+  border-bottom: none;
+}
+
+.nav__links li:hover .sub-menu1 ul li:hover {
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #276ef1;
+  text-decoration: none;
+  background: rgb(231, 231, 231);
+}
+
+
+/* main section starts here */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.content1 {
+  height: 300px;
+  width: 400px;
+  background: rgb(243, 243, 243);
+  margin: 40px;
+  border-radius: 10px;
+  transition: 0.8s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  border: 2px solid #efefef;
+  box-shadow: 1px 2px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 8%);
+}
+
+.content2 {
+  height: 300px;
+  width: 400px;
+  background: rgb(243, 243, 243);
+  border-radius: 10px;
+  transition: 0.8s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  border: 2px solid #efefef;
+  box-shadow: 1px 2px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 8%);
+}
+
+.content1:hover {
+  transition: 0.8s ease;
+  transform: scale(1.08);
+  border: 2px solid rgb(161, 161, 161);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.content2:hover {
+  transition: 0.8s ease;
+  transform: scale(1.08);
+  border: 2px solid rgb(161, 161, 161);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  height: 400px;
+  width: 100%;
+  background: #233240;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 30vh;
+  color: #fff;
+  font-family: Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;;
+}
+
+.container h2 {
+  font-weight: 300;
+  font-family: Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.tools {
+  display: flex;
+}
+
+.tool {
+  height: 120px;
+  width: 120px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #344a5f;
+  flex-direction: column;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tool:hover {
+  transform: translateY(-8px);
+  background: #3e5264;
+}
+
+.tool .logo {
+  height: 80px;
+  width: 80px;
+  margin: 4px;
+}
+
+.tool span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tool img {
+  height: 80px;
+  width: 80px;
+  margin: 2.7px;
+}
