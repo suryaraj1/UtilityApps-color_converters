@@ -1,12 +1,15 @@
 const navBar = document.querySelector("header");
-const container = document.querySelector(".wrapper");
-const hexNumber = document.querySelector(".input");
-const redOutput = document.querySelector(".red");
-const greenOutput = document.querySelector(".green");
-const blueOutput = document.querySelector(".blue");
-const converterBtn = document.querySelector(".converter");
-const resetBtn = document.querySelector(".reset");
+const container = document.querySelector(".color-output");
+const hexNumber = document.querySelector(".typer");
+const button = document.querySelector(".btn-converter");
+const redOutput = document.querySelector(".red-output");
+const greenOutput = document.querySelector(".green-output");
+const blueOutput = document.querySelector(".blue-output");
+const resetBtn = document.querySelector(".btn-reset");
+const outputString = document.querySelector(".rgb-output");
 const accordion = document.querySelectorAll(".contentBox");
+
+console.log(outputString);
 
 window.onscroll = () => {
   const sticky = navBar.offsetTop;
@@ -30,7 +33,7 @@ const changeBackgroundColor = () => {
   container.style.backgroundColor = hexNumber.value;
 }
 
-converterBtn.addEventListener('click', () => {
+button.addEventListener('click', () => {
   changeBackgroundColor();
   const rgbString = hex_to_RGB(hexNumber.value);
   redOutput.innerHTML = rgbString.r;
@@ -39,12 +42,12 @@ converterBtn.addEventListener('click', () => {
 });
 
 resetBtn.addEventListener('click', () => {
-  hexNumber.value = "";
+  hexNumber.value = "#000000";
   redOutput.innerHTML = "";
-  blueOutput.innerHTML = "";
   greenOutput.innerHTML = "";
-  container.style.backgroundColor = "#a6c0d4";
-});
+  blueOutput.innerHTML = "";
+  container.style.backgroundColor = "#000";
+})
 
 const runAccordion = () => {
   for (let i = 0; i < accordion.length; i += 1) {
@@ -61,3 +64,26 @@ const runAccordion = () => {
 };
 
 runAccordion();
+
+// tooltip part here
+const redColor = String.fromCodePoint(0x1F534);
+const greenColor = String.fromCodePoint(0x1F7E2);
+const blueColor = String.fromCodePoint(0x1F535);
+
+tippy('.red-output', {
+  content: "Red Color " + redColor,
+  animation: 'scale-subtle',
+  theme: 'red-gradient',
+})
+
+tippy('.green-output', {
+  content: "Green Color " + greenColor,
+  animation: 'scale-subtle',
+  theme: 'green-gradient',
+})
+
+tippy('.blue-output', {
+  content: "Blue color " + blueColor,
+  animation: 'scale-subtle',
+  theme: 'blue-gradient',
+})

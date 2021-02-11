@@ -470,6 +470,7 @@ header h2 i:hover {
   margin: 20px;
   background: #000;
   border-radius: 4px;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.4);
 }
 
 /* accordion starts here */

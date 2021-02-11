@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles1.css">
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale-subtle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/gradient.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
   <title>Utility-apps1</title>
 </head>
 
@@ -17,7 +20,7 @@
         <li><a class="link" href="#">color-code converters <i class="fas fa-sort-down"></i></a>
           <div class="sub-menu1">
             <ul>
-              <li><a href="./rgbToHex.html">RGB to HEX converter</a></li>
+              <li><a href="/rgbToHex/rgbToHex.html">RGB to HEX converter</a></li>
               <li><a href="./Hextorgb.html">HEX to RGB converter</a></li>
             </ul>
           </div>
@@ -28,52 +31,61 @@
 
   <!-- main section -->
   <div class="container">
-    <div class="title-wrapper">
-      <h1 class="title">HEX to RGB converter</h1>
-    </div>
+    <!-- <div class="title-wrapper">
+            <h1 class="title">RGB to HEX converter</h1>
+        </div> -->
 
     <div class="component1">
       <div class="wrapper">
-        <input class="input" placeholder="enter hex code here">
 
-        <div class="tools">
-          <button class="converter"><i class="fas fa-sync"></i>Convert</button>
-          <button class="reset"><i class="fas fa-times"></i>Reset</button>
+        <div class="header">
+          HEX-Code
         </div>
 
-        <div class="output">
-          <div class="stamp">
-            <p>Red </p>
-            <div class="color red-stamp">R</div>
+        <div class="component red-component">
+          <div class="input">
+            <input type="text" class="typer" placeholder="#000000">
           </div>
-          <textarea class="red output-text" id="" cols="30" rows="2"></textarea>
-
-          <div class="stamp">
-            <p>Green </p>
-            <div class="color green-stamp">G</div>
-          </div>
-          <textarea class="green output-text" id="" cols="30" rows="2"></textarea>
-
-          <div class="stamp">
-            <p>Blue </p>
-            <div class="color blue-stamp">B</div>
-          </div>
-          <textarea class="blue output-text" id="" cols="30" rows="2"></textarea>
         </div>
+
       </div>
+    </div>
+
+    <div class="button-container">
+      <button class="btn-converter">Convert
+        <div class="icon"><i class="fa fa-sync"></i></div>
+      </button>
+      <button class="btn-reset">Reset
+        <div class="icon reset-icon"><i class="fa fa-times"></i></div>
+      </button>
+    </div>
+
+    <div class="wrapper1">
+      <div class="result-div">
+        RGB Code
+      </div>
+      <div class="rgb-output">
+        <div class="red-output"></div>
+        <div class="green-output"></div>
+        <div class="blue-output"></div>
+      </div>
+      <div class="color-output"></div>
     </div>
   </div>
 
   <br>
 
-  <!-- information regarding converter -->
+  <!-- information regarding encoder -->
+  </div>
 
   <div class="accordion">
+
     <div class="sub-information">
+
       <div class="contentBox">
 
         <div class="label-1">
-          <div class="status-circle"></div>What is HEX to RGB conversion ?
+          <div class="status-circle"></div>What is RGB to HEX conversion ?
         </div>
 
         <div class="content">
@@ -85,7 +97,7 @@
       <div class="contentBox">
 
         <div class="label-1">
-          <div class="status-circle"></div>When and why HEX to RGB conversion is used ?
+          <div class="status-circle"></div>When and why RGB to HEX conversion is used ?
         </div>
 
         <div class="content">
@@ -97,7 +109,7 @@
       <div class="contentBox">
 
         <div class="label-1">
-          <div class="status-circle"></div>Converting a HEX code to RGB code
+          <div class="status-circle"></div>Converting a RGB code to HEX code
         </div>
 
         <div class="content">
@@ -108,6 +120,9 @@
     </div>
   </div>
 
+
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
   <script src="./HextoRgb.js"></script>
 </body>
 
