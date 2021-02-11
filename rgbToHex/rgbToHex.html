@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale-subtle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/gradient.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
     <title>Utility-apps1</title>
 </head>
 
@@ -28,34 +31,61 @@
 
     <!-- main section -->
     <div class="container">
-        <div class="title-wrapper">
+        <!-- <div class="title-wrapper">
             <h1 class="title">RGB to HEX converter</h1>
-        </div>
+        </div> -->
 
         <div class="component1">
             <div class="wrapper">
-                <div class="component">
-                    <div class="color red">R</div>
-                    <input type="range" class="slider red_slider" min="0" max="255" value="0">
-                    <div class="value redVal">0</div>
+
+                <div class="component red-component">
+                    <div class="input">
+                        <input type="text" class="typer red" placeholder="enter the value of red color">
+                    </div>
+                    <div class="range-wrap range-red">
+                        <input type="range" class="slider red_slider" id="red_slider" min="0" max="255" value="0">
+                        <output class="bubble"></output>
+                    </div>
                 </div>
 
-                <div class="component">
-                    <div class="color green">G</div>
-                    <input type="range" class="slider green_slider" min="0" max="255" value="0">
-                    <div class="value greenVal">0</div>
+                <div class="component green-component">
+                    <div class="input">
+                        <input type="text" class="typer green" placeholder="enter the value of green color">
+                    </div>
+                    <div class="range-wrap range-green">
+                        <input type="range" class="slider green_slider" min="0" max="255" value="0">
+                        <output class="bubble"></output>
+                    </div>
                 </div>
 
-                <div class="component">
-                    <div class="color blue">B</div>
-                    <input type="range" class="slider blue_slider" min="0" max="255" value="0">
-                    <div class="value blueVal">0</div>
+                <div class="component blue-component">
+                    <div class="input">
+                        <input type="text" class="typer blue" placeholder="enter the value of blue color">
+                    </div>
+                    <div class="range-wrap range-blue">
+                        <input type="range" class="slider blue_slider" min="0" max="255" value="0">
+                        <output class="bubble"></output>
+                    </div>
                 </div>
 
-                <div class="result">
+                <!-- <div class="result">
                     <textarea class="hex" cols="10" rows="1"></textarea>
-                </div>
+                </div> -->
             </div>
+        </div>
+
+        <button class="btn-converter">Convert
+            <div class="icon"><i class="fa fa-sync"></i></div>
+        </button>
+
+        <div class="wrapper1">
+            <div class="result-div">
+                HEX-Code
+            </div>
+            <div class="hex-output">
+                #000000
+            </div>
+            <div class="color-output"></div>
         </div>
     </div>
 
@@ -107,6 +137,8 @@
     </div>
 
 
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="./rgbToHex.js"></script>
 </body>
 
