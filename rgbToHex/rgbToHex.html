@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale-subtle.css" />
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/gradient.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <title>Utility-apps1</title>
 </head>
 
@@ -37,6 +37,10 @@
 
         <div class="component1">
             <div class="wrapper">
+
+                <!-- <div class="result-div title">
+                    RGB Code
+                </div> -->
 
                 <div class="component red-component">
                     <div class="input">
@@ -80,10 +84,11 @@
 
         <div class="wrapper1">
             <div class="result-div">
-                HEX-Code
+                HEX Code
             </div>
-            <div class="hex-output">
-                #000000
+            <div class="label">
+                <div class="hexString" id="foo">#000000</div>
+                <div class="icon copy-btn" data-clipboard-target="#foo"><i class="fas fa-copy"></i></div>
             </div>
             <div class="color-output"></div>
         </div>
@@ -135,7 +140,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>

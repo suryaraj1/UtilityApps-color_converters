@@ -6,13 +6,11 @@ const redNumber = document.querySelector(".typer.red");
 const greenNumber = document.querySelector(".typer.green");
 const blueNumber = document.querySelector(".typer.blue");
 const container = document.querySelector(".wrapper");
-const hexNumber = document.querySelector(".hex-output");
+const hexString = document.querySelector(".hexString");
 const hexOutput = document.querySelector(".color-output");
 const button = document.querySelector(".btn-converter");
 const accordion = document.querySelectorAll(".contentBox");
 const allRanges = document.querySelectorAll(".range-wrap");
-
-console.log(hexOutput);
 
 window.onscroll = () => {
     const sticky = navBar.offsetTop;
@@ -27,20 +25,19 @@ button.addEventListener('click', () => {
     const redValue = Number(redNumber.value).toString(16);
     const greenValue = Number(greenNumber.value).toString(16);
     const blueValue = Number(blueNumber.value).toString(16);
-    hexNumber.innerHTML = `#${redValue.padStart(2, '0')}${greenValue.padStart(2, '0')}${blueValue.padStart(2, '0')}`;
-    hexOutput.style.backgroundColor = hexNumber.innerHTML;
-
+    hexString.innerHTML = `#${redValue.padStart(2, '0')}${greenValue.padStart(2, '0')}${blueValue.padStart(2, '0')}`;
+    hexOutput.style.backgroundColor = hexString.innerHTML;
 });
 
 const hexConverter = () => {
     const redValue = Number(redSlider.value).toString(16);
     const greenValue = Number(greenSlider.value).toString(16);
     const blueValue = Number(blueSlider.value).toString(16);
-    hexNumber.innerHTML = `#${redValue.padStart(2, '0')}${greenValue.padStart(2, '0')}${blueValue.padStart(2, '0')}`;
+    hexString.innerHTML = `#${redValue.padStart(2, '0')}${greenValue.padStart(2, '0')}${blueValue.padStart(2, '0')}`;
 };
 
 const changeBackgroundColor = () => {
-    hexOutput.style.backgroundColor = hexNumber.innerHTML;
+    hexOutput.style.backgroundColor = hexString.innerHTML;
 }
 
 redSlider.addEventListener('mousemove', () => {
@@ -127,3 +124,10 @@ tippy('.blue-component', {
     animation: 'scale-subtle',
     theme: 'blue-gradient',
 })
+
+tippy('.copy-btn', {
+    trigger: 'click',
+    content: 'copied'
+})
+
+new ClipboardJS('.copy-btn');

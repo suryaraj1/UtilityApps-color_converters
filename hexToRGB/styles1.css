@@ -397,7 +397,7 @@ header h2 i:hover {
 .btn-converter {
   border: none;
   outline: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   background: #276ef1;
   color: #fff;
   font-weight: 700;
@@ -416,7 +416,7 @@ header h2 i:hover {
 .btn-reset {
   border: none;
   outline: none;
-  padding: 10px 28px;
+  padding: 10px 24px;
   background: rgb(182, 19, 19);
   color: #fff;
   font-weight: 700;
@@ -598,8 +598,12 @@ header h2 i:hover {
   border-radius: 3px;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
-  user-select: none;
   text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+}
+
+.rgbString::selection {
+  color: none;
+  background: none;
 }
 
 .label .icon {

@@ -92,7 +92,7 @@ tippy('.blue-output', {
 
 tippy('.copy-btn', {
   trigger: 'click',
-  content: 'copied',
+  content: 'copied'
 })
 
 // for the clipboard copying
