@@ -95,5 +95,13 @@ tippy('.copy-btn', {
   content: 'copied'
 })
 
+tippy('.color-output', {
+  animation: 'scale-subtle',
+  theme: 'bw-gradient',
+  content: 'color preview',
+  placement: 'top-start',
+  arrow: false
+})
+
 // for the clipboard copying
 new ClipboardJS('.copy-btn');
