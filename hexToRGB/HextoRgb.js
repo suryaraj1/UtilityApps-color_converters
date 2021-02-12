@@ -120,3 +120,5 @@ sr.reveal('.green-output', { delay: 300 });
 sr.reveal('.blue-output', { delay: 400 });
 sr.reveal('.label', { delay: 500 });
 sr.reveal('.color-output', { delay: 600 });
+sr.reveal('.btn1', { delay: 200 });
+sr.reveal('.btn2', { delay: 300 });

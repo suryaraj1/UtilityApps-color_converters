@@ -142,3 +142,4 @@ sr.reveal('.component', { interval: 200 });
 sr.reveal('.result-div', { interval: 200 });
 sr.reveal('.label', { delay: 200 });
 sr.reveal('.color-output', { delay: 400 });
+sr.reveal('.btn1', { delay: 200 });
