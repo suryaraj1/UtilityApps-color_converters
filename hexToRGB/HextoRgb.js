@@ -7,9 +7,9 @@ const greenOutput = document.querySelector(".green-output");
 const blueOutput = document.querySelector(".blue-output");
 const resetBtn = document.querySelector(".btn-reset");
 const outputString = document.querySelector(".rgb-output");
+const rgbCode = document.querySelector(".rgbString");
+const copyBtn = document.querySelector(".copy-btn");
 const accordion = document.querySelectorAll(".contentBox");
-
-console.log(outputString);
 
 window.onscroll = () => {
   const sticky = navBar.offsetTop;
@@ -39,6 +39,7 @@ button.addEventListener('click', () => {
   redOutput.innerHTML = rgbString.r;
   greenOutput.innerHTML = rgbString.g;
   blueOutput.innerHTML = rgbString.b;
+  rgbCode.innerHTML = `rgb(${rgbString.r}, ${rgbString.g}, ${rgbString.b})`;
 });
 
 resetBtn.addEventListener('click', () => {
@@ -47,6 +48,7 @@ resetBtn.addEventListener('click', () => {
   greenOutput.innerHTML = "";
   blueOutput.innerHTML = "";
   container.style.backgroundColor = "#000";
+  rgbCode.innerHTML = `rgb(00, 00, 00)`;
 })
 
 const runAccordion = () => {
@@ -87,3 +89,11 @@ tippy('.blue-output', {
   animation: 'scale-subtle',
   theme: 'blue-gradient',
 })
+
+tippy('.copy-btn', {
+  trigger: 'click',
+  content: 'copied',
+})
+
+// for the clipboard copying
+new ClipboardJS('.copy-btn');
