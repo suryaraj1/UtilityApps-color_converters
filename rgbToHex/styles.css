@@ -158,12 +158,11 @@ header h2 i:hover {
   border-radius: 8px;
   box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.5);
   background: #F8F8F8;
-  margin: 20px;
 }
 
 .wrapper1 {
   height: 400px;
-  width: 400px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -374,6 +373,7 @@ header h2 i:hover {
   border: none;
   outline: none;
   margin-right: 20px;
+  margin-left: 20px;
   padding: 10px 20px;
   background: #276ef1;
   color: #fff;
@@ -550,6 +550,7 @@ header h2 i:hover {
 /* accordion starts here */
 .accordion {
   margin-top: 50px;
+  width: 100%;
   height: 300px;
   background: #233240;
   display: flex;
@@ -558,7 +559,7 @@ header h2 i:hover {
 }
 
 .sub-information {
-  width: 800px;
+  width: 600px;
 }
 
 .sub-information .contentBox {
@@ -615,4 +616,10 @@ header h2 i:hover {
   height: 100px;
   padding: 10px;
   border-radius: 2px;
+}
+
+@media all and (min-width: 768px) {
+  .container {
+
+  }
 }

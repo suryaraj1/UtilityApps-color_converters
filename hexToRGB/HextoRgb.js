@@ -105,3 +105,18 @@ tippy('.color-output', {
 
 // for the clipboard copying
 new ClipboardJS('.copy-btn');
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 2000,
+})
+
+sr.reveal('.header', { interval: 200 });
+sr.reveal('.component', { delay: 200 });
+sr.reveal('.result-div', { interval: 200 });
+sr.reveal('.red-output', { delay: 200 });
+sr.reveal('.green-output', { delay: 300 });
+sr.reveal('.blue-output', { delay: 400 });
+sr.reveal('.label', { delay: 500 });
+sr.reveal('.color-output', { delay: 600 });
