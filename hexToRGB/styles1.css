@@ -237,6 +237,7 @@ header h2 i:hover {
   padding: 6px 12px;
   margin-top: 15px;
   font-size: 17px;
+  letter-spacing: 3px;
   background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
 }
 
@@ -438,6 +439,11 @@ header h2 i:hover {
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+}
+
+.btn-reset p {
+  position: relative;
+  left: 10px;
 }
 
 .btn-reset .reset-icon {
